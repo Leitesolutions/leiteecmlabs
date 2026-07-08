@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leite ECM Labs — ECU Repair, Key Coding &amp; Auto Electronics, Pilar Goa</title>
+<meta name="description" content="Leite ECM Labs — expert ECU/ECM repair, immobilizer key coding, OBD diagnostics, instrument cluster and airbag module repair in Pilar, Goa. Opposite Bank of Baroda, Pilar.">
+
+<!-- Geo tags for location: Pilar, Goa, opposite Bank of Baroda -->
+<meta name="geo.region" content="IN-GA">
+<meta name="geo.placename" content="Pilar, Goa">
+<meta name="geo.position" content="15.4270;73.8985">
+<meta name="ICBM" content="15.4270, 73.8985">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AutoRepair",
+  "name": "Leite ECM Labs",
+  "image": "",
+  "description": "Specialists in ECU/ECM repair, immobilizer key coding, OBD diagnostics, instrument cluster and airbag module repair.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Opposite Bank of Baroda, Pilar",
+    "addressLocality": "Pilar",
+    "addressRegion": "Goa",
+    "postalCode": "403203",
+    "addressCountry": "IN"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 15.4270,
+    "longitude": 73.8985
+  },
+  "telephone": "+91-00000-00000",
+  "priceRange": "₹₹",
+  "openingHours": "Mo-Sa 09:30-19:00"
+}
+</script>
+
+<style>
+  :root{
+    --ink:#0B1220;
+    --panel:#101B33;
+    --panel-2:#0E1729;
+    --line: rgba(234,242,245,0.10);
+    --text:#EAF2F5;
+    --muted:#8C9BB5;
+    --teal:#00D9A0;
+    --amber:#FFB020;
+    --magenta:#FF3D71;
+    --cyan:#3FD7FF;
+    --radius: 14px;
+    --display: "Space Grotesk", sans-serif;
+    --body: "Inter", sans-serif;
+    --mono: "IBM Plex Mono", monospace;
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--ink);
+    color:var(--text);
+    font-family:var(--body);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  img,svg{max-width:100%; display:block;}
+  a{color:inherit;}
+  .wrap{max-width:1180px; margin:0 auto; padding:0 24px;}
+  .eyebrow{
+    font-family:var(--mono);
+    font-size:12px;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--teal);
+    display:flex; align-items:center; gap:10px;
+  }
+  .eyebrow::before{
+    content:"";
+    width:8px;height:8px;border-radius:50%;
+    background:var(--teal);
+    box-shadow:0 0 0 3px rgba(0,217,160,0.18);
+  }
+  h1,h2,h3{font-family:var(--display); font-weight:700; margin:0; letter-spacing:-0.01em;}
+  .btn{
+    display:inline-flex; align-items:center; gap:8px;
+    font-family:var(--body); font-weight:600; font-size:15px;
+    padding:13px 24px; border-radius:999px; border:1px solid transparent;
+    cursor:pointer; text-decoration:none; transition:transform .15s ease, box-shadow .15s ease, background .15s ease;
+    white-space:nowrap;
+  }
+  .btn-primary{ background:linear-gradient(135deg, var(--teal), var(--cyan)); color:#04150F; box-shadow:0 8px 24px -8px rgba(0,217,160,.55);}
+  .btn-primary:hover{ transform:translateY(-2px); box-shadow:0 12px 28px -8px rgba(0,217,160,.7);}
+  .btn-ghost{ background:transparent; border-color:var(--line); color:var(--text);}
+  .btn-ghost:hover{ border-color:var(--teal); color:var(--teal); }
+  .btn-amber{ background:linear-gradient(135deg, var(--amber), #ff7a3d); color:#1a0d00; box-shadow:0 8px 24px -8px rgba(255,176,32,.55);}
+  .btn-amber:hover{ transform:translateY(-2px);}
+
+  /* ---------- Header ---------- */
+  header{
+    position:sticky; top:0; z-index:50;
+    background:rgba(11,18,32,0.85);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav{ display:flex; align-items:center; justify-content:space-between; padding:16px 0;}
+  .logo{ display:flex; align-items:center; gap:10px; font-family:var(--display); font-weight:700; font-size:19px;}
+  .logo-mark{
+    width:38px;height:38px;border-radius:10px;
+    background:conic-gradient(from 210deg, var(--teal), var(--cyan), var(--magenta), var(--amber), var(--teal));
+    display:flex; align-items:center; justify-content:center; position:relative;
+    box-shadow:0 0 0 1px rgba(255,255,255,0.06);
+  }
+  .logo-mark::after{
+    content:"L"; font-family:var(--display); font-weight:700; color:#04150F; font-size:18px;
+  }
+  .logo small{ display:block; font-family:var(--mono); font-size:10px; letter-spacing:.12em; color:var(--muted); font-weight:500;}
+  nav.links{ display:flex; gap:28px; font-size:14px; font-weight:500; color:var(--muted);}
+  nav.links a:hover{ color:var(--teal);}
+  .nav-cta{ display:flex; gap:12px; align-items:center;}
+  .burger{ display:none; background:none; border:1px solid var(--line); color:var(--text); border-radius:8px; padding:8px 10px; cursor:pointer;}
+
+  @media (max-width: 900px){
+    nav.links{ display:none; }
+    .burger{ display:inline-flex; }
+  }
+
+  /* ---------- Hero ---------- */
+  .hero{
+    position:relative; overflow:hidden;
+    padding:96px 0 80px;
+    border-bottom:1px solid var(--line);
+  }
+  .circuit-bg{
+    position:absolute; inset:0; z-index:0; opacity:.5;
+    background:
+      radial-gradient(600px 300px at 85% 10%, rgba(0,217,160,0.16), transparent 60%),
+      radial-gradient(500px 260px at 10% 90%, rgba(255,61,113,0.14), transparent 60%);
+  }
+  .hero-grid{ position:relative; z-index:1; display:grid; grid-template-columns:1.15fr .85fr; gap:56px; align-items:center;}
+  @media (max-width: 900px){ .hero-grid{ grid-template-columns:1fr; } }
+  .hero h1{ font-size:clamp(34px, 5vw, 58px); line-height:1.04; margin:18px 0 20px;}
+  .hero h1 .accent{ background:linear-gradient(120deg, var(--teal), var(--cyan)); -webkit-background-clip:text; background-clip:text; color:transparent;}
+  .hero p.lead{ font-size:17px; color:var(--muted); max-width:520px; margin-bottom:32px;}
+  .hero-actions{ display:flex; gap:14px; flex-wrap:wrap; margin-bottom:40px;}
+  .stat-strip{ display:flex; gap:32px; flex-wrap:wrap; font-family:var(--mono);}
+  .stat{ }
+  .stat b{ display:block; font-family:var(--display); font-size:26px; color:var(--text);}
+  .stat span{ font-size:11px; color:var(--muted); letter-spacing:.06em; text-transform:uppercase;}
+
+  .scope-panel{
+    position:relative; background:var(--panel); border:1px solid var(--line); border-radius:20px; padding:22px;
+    box-shadow:0 30px 60px -30px rgba(0,0,0,0.6);
+  }
+  .scope-head{ display:flex; justify-content:space-between; align-items:center; font-family:var(--mono); font-size:11px; color:var(--muted); margin-bottom:14px; text-transform:uppercase; letter-spacing:.08em;}
+  .dot-row{ display:flex; gap:6px;}
+  .dot-row span{ width:8px;height:8px;border-radius:50%; background:var(--line);}
+  .dot-row span:nth-child(1){ background:var(--magenta);}
+  .dot-row span:nth-child(2){ background:var(--amber);}
+  .dot-row span:nth-child(3){ background:var(--teal);}
+  .scope-screen{ background:var(--panel-2); border-radius:12px; padding:10px; border:1px solid var(--line);}
+  .scope-list{ list-style:none; margin:14px 0 0; padding:0; font-family:var(--mono); font-size:12.5px; color:var(--muted);}
+  .scope-list li{ display:flex; justify-content:space-between; padding:8px 0; border-top:1px dashed var(--line);}
+  .scope-list li b{ color:var(--text); font-weight:500;}
+  .ok{ color:var(--teal);}
+
+  /* animated waveform */
+  .waveform{ width:100%; height:64px; display:block;}
+  .waveform path{ fill:none; stroke:var(--teal); stroke-width:2; filter:drop-shadow(0 0 6px rgba(0,217,160,.6)); }
+  .waveform .p2{ stroke:var(--magenta); opacity:.55; filter:drop-shadow(0 0 6px rgba(255,61,113,.5));}
+
+  /* ---------- Section shell ---------- */
+  section{ padding:88px 0; border-bottom:1px solid var(--line); position:relative;}
+  .section-head{ max-width:640px; margin-bottom:48px;}
+  .section-head h2{ font-size:clamp(26px,3.4vw,38px); margin-top:14px;}
+  .section-head p{ color:var(--muted); margin-top:12px; font-size:15.5px;}
+
+  /* ---------- Services ---------- */
+  .services-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:20px;}
+  @media (max-width:900px){ .services-grid{ grid-template-columns:repeat(2,1fr);} }
+  @media (max-width:640px){ .services-grid{ grid-template-columns:1fr;} }
+  .service-card{
+    background:var(--panel); border:1px solid var(--line); border-radius:var(--radius);
+    padding:26px; transition:transform .18s ease, border-color .18s ease;
+    position:relative; overflow:hidden;
+  }
+  .service-card:hover{ transform:translateY(-4px); border-color:rgba(0,217,160,.4);}
+  .service-card .icn{
+    width:44px;height:44px;border-radius:10px; display:flex; align-items:center; justify-content:center;
+    margin-bottom:16px; font-size:20px;
+  }
+  .service-card h3{ font-size:18px; margin-bottom:8px;}
+  .service-card p{ color:var(--muted); font-size:14px; margin:0 0 14px;}
+  .service-card .tag{ font-family:var(--mono); font-size:11px; color:var(--teal); letter-spacing:.06em;}
+
+  .icn.c1{ background:rgba(0,217,160,.14); color:var(--teal);}
+  .icn.c2{ background:rgba(63,215,255,.14); color:var(--cyan);}
+  .icn.c3{ background:rgba(255,176,32,.14); color:var(--amber);}
+  .icn.c4{ background:rgba(255,61,113,.14); color:var(--magenta);}
+  .icn.c5{ background:rgba(0,217,160,.14); color:var(--teal);}
+  .icn.c6{ background:rgba(63,215,255,.14); color:var(--cyan);}
+
+  /* ---------- Process ---------- */
+  .process{ display:grid; grid-template-columns:repeat(4,1fr); gap:0; position:relative;}
+  @media (max-width:900px){ .process{ grid-template-columns:1fr 1fr;} }
+  @media (max-width:560px){ .process{ grid-template-columns:1fr;} }
+  .step{ padding:0 20px 0 0; position:relative;}
+  .step .n{ font-family:var(--mono); font-size:13px; color:var(--muted);}
+  .step h3{ font-size:17px; margin:10px 0 8px;}
+  .step p{ color:var(--muted); font-size:13.5px; margin:0;}
+  .step:not(:last-child)::after{
+    content:""; position:absolute; top:8px; right:0; width:1px; height:60px; background:var(--line);
+  }
+  @media (max-width:900px){ .step:not(:last-child)::after{ display:none;} }
+
+  /* ---------- Quote form ---------- */
+  .quote-wrap{ display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:start;}
+  @media (max-width:900px){ .quote-wrap{ grid-template-columns:1fr;} }
+  .quote-perks{ display:flex; flex-direction:column; gap:18px; margin-top:26px;}
+  .perk{ display:flex; gap:14px; align-items:flex-start;}
+  .perk .dot{ width:22px;height:22px; border-radius:50%; background:rgba(0,217,160,.14); color:var(--teal); display:flex; align-items:center; justify-content:center; font-size:12px; flex:none; margin-top:2px;}
+  .perk div b{ display:block; font-size:14.5px;}
+  .perk div span{ color:var(--muted); font-size:13px;}
+
+  form.quote-form{
+    background:var(--panel); border:1px solid var(--line); border-radius:18px; padding:30px;
+  }
+  .form-row{ display:grid; grid-template-columns:1fr 1fr; gap:16px;}
+  @media (max-width:560px){ .form-row{ grid-template-columns:1fr;} }
+  .field{ margin-bottom:18px;}
+  .field label{ display:block; font-size:12.5px; font-weight:600; margin-bottom:7px; color:var(--muted); text-transform:uppercase; letter-spacing:.05em;}
+  .field input, .field select, .field textarea{
+    width:100%; background:var(--panel-2); border:1px solid var(--line); border-radius:10px;
+    padding:12px 14px; color:var(--text); font-family:var(--body); font-size:14.5px; outline:none;
+    transition:border-color .15s ease;
+  }
+  .field input:focus, .field select:focus, .field textarea:focus{ border-color:var(--teal);}
+  .field textarea{ resize:vertical; min-height:96px;}
+  .form-note{ font-size:12px; color:var(--muted); margin-top:10px;}
+  #formStatus{ margin-top:14px; font-size:13.5px; font-family:var(--mono); display:none;}
+  #formStatus.ok{ color:var(--teal); display:block;}
+
+  /* ---------- Payment ---------- */
+  .pay-grid{ display:grid; grid-template-columns:1fr 1fr; gap:28px;}
+  @media (max-width:900px){ .pay-grid{ grid-template-columns:1fr;} }
+  .pay-card{ background:var(--panel); border:1px solid var(--line); border-radius:18px; padding:28px;}
+  .pay-card h3{ font-size:18px; margin-bottom:6px;}
+  .pay-card p.sub{ color:var(--muted); font-size:13.5px; margin:0 0 20px;}
+  .qr-row{ display:flex; gap:20px; align-items:center; flex-wrap:wrap;}
+  .qr-box{ width:150px; height:150px; background:#fff; border-radius:12px; padding:8px; flex:none;}
+  .qr-box img{ width:100%; height:100%; object-fit:contain;}
+  .upi-id{ font-family:var(--mono); background:var(--panel-2); border:1px solid var(--line); border-radius:8px; padding:10px 14px; font-size:14px; display:flex; align-items:center; justify-content:space-between; gap:10px; margin-bottom:14px;}
+  .copy-btn{ background:none; border:1px solid var(--line); color:var(--teal); border-radius:6px; padding:4px 10px; font-size:11px; cursor:pointer; font-family:var(--mono);}
+  .copy-btn:hover{ border-color:var(--teal);}
+  .pay-apps{ display:flex; gap:10px; flex-wrap:wrap; margin-top:16px;}
+  .pay-apps a{ font-size:13px; padding:9px 16px; border-radius:999px; border:1px solid var(--line); font-weight:600;}
+  .pay-apps a:hover{ border-color:var(--teal); color:var(--teal);}
+  .method-list{ list-style:none; margin:0; padding:0;}
+  .method-list li{ display:flex; justify-content:space-between; padding:12px 0; border-top:1px solid var(--line); font-size:14px;}
+  .method-list li:first-child{ border-top:none;}
+  .method-list li span.k{ color:var(--muted);}
+
+  /* ---------- Location ---------- */
+  .loc-grid{ display:grid; grid-template-columns:.9fr 1.1fr; gap:32px; align-items:stretch;}
+  @media (max-width:900px){ .loc-grid{ grid-template-columns:1fr;} }
+  .loc-card{ background:var(--panel); border:1px solid var(--line); border-radius:18px; padding:28px; display:flex; flex-direction:column;}
+  .loc-card h3{ font-size:19px; margin-bottom:14px;}
+  .addr{ font-size:15px; color:var(--text); margin-bottom:18px; line-height:1.7;}
+  .addr b{ display:block; color:var(--amber); font-family:var(--mono); font-size:11px; letter-spacing:.08em; text-transform:uppercase; margin-bottom:6px;}
+  .map-embed{ border-radius:18px; overflow:hidden; border:1px solid var(--line); min-height:340px;}
+  .map-embed iframe{ width:100%; height:100%; min-height:340px; border:0; filter:grayscale(.15) contrast(1.05);}
+  .hours-list{ list-style:none; margin:0 0 20px; padding:0; font-size:13.5px;}
+  .hours-list li{ display:flex; justify-content:space-between; padding:6px 0; color:var(--muted);}
+  .hours-list li b{ color:var(--text); font-weight:500;}
+
+  /* ---------- Footer ---------- */
+  footer{ padding:48px 0 32px;}
+  .foot-grid{ display:flex; justify-content:space-between; flex-wrap:wrap; gap:24px; margin-bottom:32px;}
+  .foot-brand p{ color:var(--muted); font-size:13.5px; max-width:320px; margin-top:10px;}
+  .foot-cols{ display:flex; gap:56px; flex-wrap:wrap;}
+  .foot-col b{ display:block; font-size:12px; text-transform:uppercase; letter-spacing:.08em; color:var(--muted); margin-bottom:14px;}
+  .foot-col a{ display:block; font-size:14px; margin-bottom:10px; color:var(--text);}
+  .foot-col a:hover{ color:var(--teal);}
+  .foot-bottom{ border-top:1px solid var(--line); padding-top:20px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px; font-size:12.5px; color:var(--muted); font-family:var(--mono);}
+
+  .reveal{ opacity:0; transform:translateY(16px); transition:opacity .6s ease, transform .6s ease;}
+  .reveal.in{ opacity:1; transform:none;}
+
+  @media (prefers-reduced-motion: reduce){
+    html{ scroll-behavior:auto;}
+    .reveal{ transition:none; opacity:1; transform:none;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <div class="logo">
+      <span class="logo-mark" aria-hidden="true"></span>
+      <span>Leite ECM Labs<small>ECU · KEY CODING · DIAGNOSTICS</small></span>
+    </div>
+    <nav class="links">
+      <a href="#services">Services</a>
+      <a href="#process">Process</a>
+      <a href="#quote">Get a Quote</a>
+      <a href="#payment">Payment</a>
+      <a href="#location">Location</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="tel:+910000000000" class="btn btn-ghost" style="display:none" id="callBtnDesktop">Call Us</a>
+      <a href="#quote" class="btn btn-primary">Get a Free Quote</a>
+      <button class="burger" id="burgerBtn" aria-label="Toggle menu">☰</button>
+    </div>
+  </div>
+  <div id="mobileMenu" style="display:none; border-top:1px solid var(--line); background:var(--ink);">
+    <div class="wrap" style="display:flex; flex-direction:column; padding:16px 24px; gap:14px;">
+      <a href="#services">Services</a>
+      <a href="#process">Process</a>
+      <a href="#quote">Get a Quote</a>
+      <a href="#payment">Payment</a>
+      <a href="#location">Location</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="circuit-bg" aria-hidden="true"></div>
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">Pilar, Goa · Opposite Bank of Baroda</div>
+      <h1>We diagnose what<br> others give up on — <span class="accent">ECU, keys, and everything in between.</span></h1>
+      <p class="lead">Leite ECM Labs repairs and reprograms engine control modules, codes immobilizer keys, and fixes the electronics your mechanic can't. Board-level repair, not just part-swapping.</p>
+      <div class="hero-actions">
+        <a href="#quote" class="btn btn-primary">Ask for a Quote →</a>
+        <a href="#services" class="btn btn-ghost">See All Services</a>
+      </div>
+      <div class="stat-strip">
+        <div class="stat"><b>4,200+</b><span>ECUs Repaired</span></div>
+        <div class="stat"><b>60+</b><span>Car &amp; Bike Brands</span></div>
+        <div class="stat"><b>24–48 hrs</b><span>Avg. Turnaround</span></div>
+        <div class="stat"><b>90 Day</b><span>Repair Warranty</span></div>
+      </div>
+    </div>
+
+    <div class="scope-panel reveal">
+      <div class="scope-head">
+        <span>bench_diagnostics.log</span>
+        <div class="dot-row"><span></span><span></span><span></span></div>
+      </div>
+      <div class="scope-screen">
+        <svg class="waveform" viewBox="0 0 400 64" preserveAspectRatio="none">
+          <path class="p1" id="wave1" d="M0,32 L20,32 L28,10 L36,54 L44,32 L60,32 L68,20 L76,44 L84,32 L400,32"/>
+          <path class="p2" id="wave2" d="M0,40 L40,40 L48,18 L56,58 L64,40 L110,40 L118,26 L126,50 L134,40 L400,40"/>
+        </svg>
+        <ul class="scope-list">
+          <li><span>Engine ECU (Bosch EDC17)</span> <b class="ok">Repaired ✓</b></li>
+          <li><span>Immobilizer Key Match</span> <b class="ok">Coded ✓</b></li>
+          <li><span>Instrument Cluster</span> <b class="ok">Calibrated ✓</b></li>
+          <li><span>Fault Codes Cleared</span> <b>0 pending</b></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">What we do</div>
+      <h2>Every ECM &amp; key service, under one roof</h2>
+      <p>From dead ECUs to lost car keys — if it involves a circuit board, a chip, or an ignition, we can likely fix it same-week.</p>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="icn c1">⚙️</div>
+        <h3>ECU / ECM Repair</h3>
+        <p>Board-level diagnosis and repair of dead, no-start, or faulty engine control modules — petrol &amp; diesel, all makes.</p>
+        <div class="tag">Bench repair · Component-level</div>
+      </div>
+      <div class="service-card">
+        <div class="icn c2">🔑</div>
+        <h3>Key Coding &amp; Immobilizer</h3>
+        <p>Lost-all-keys programming, spare key coding, transponder cloning, and immobilizer bypass or repair.</p>
+        <div class="tag">Same-day, most models</div>
+      </div>
+      <div class="service-card">
+        <div class="icn c3">🧪</div>
+        <h3>OBD Diagnostics</h3>
+        <p>Full fault-code scanning, live-data analysis, and sensor testing to find the actual root cause — not just the symptom.</p>
+        <div class="tag">Multi-brand scanners</div>
+      </div>
+      <div class="service-card">
+        <div class="icn c4">📟</div>
+        <h3>Instrument Cluster Repair</h3>
+        <p>Dead pixels, needle sweep faults, flickering displays, mileage correction and cluster-to-ECU re-sync.</p>
+        <div class="tag">Speedo · Tacho · Display</div>
+      </div>
+      <div class="service-card">
+        <div class="icn c5">🛞</div>
+        <h3>Airbag / SRS Module Reset</h3>
+        <p>Crash-data reset and SRS module repair after deployment, plus dashboard warning-light resolution.</p>
+        <div class="tag">Post-collision service</div>
+      </div>
+      <div class="service-card">
+        <div class="icn c6">🧰</div>
+        <h3>ECU Cloning &amp; Bench Testing</h3>
+        <p>Full ECU clone/replacement mapping, bench testing before refit, and chip-tuning consultation.</p>
+        <div class="tag">Flash · Clone · Test</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="process">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">How a job runs</div>
+      <h2>A repair, in four honest steps</h2>
+      <p>No guesswork billing — you know what's wrong before you pay for it to be fixed.</p>
+    </div>
+    <div class="process">
+      <div class="step"><span class="n">01</span><h3>Diagnose</h3><p>We scan and bench-test to confirm the actual fault, not the assumed one.</p></div>
+      <div class="step"><span class="n">02</span><h3>Quote</h3><p>You get a clear price and timeline before any repair work begins.</p></div>
+      <div class="step"><span class="n">03</span><h3>Repair / Code</h3><p>Component-level repair, reflashing, or key programming on the bench.</p></div>
+      <div class="step"><span class="n">04</span><h3>Test &amp; Deliver</h3><p>Refitted, road-tested, and backed by our repair warranty.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="quote">
+  <div class="wrap">
+    <div class="quote-wrap">
+      <div>
+        <div class="eyebrow">Get started</div>
+        <h2 class="section-head" style="margin-bottom:0;">Ask for a quote</h2>
+        <p style="color:var(--muted); margin-top:14px; max-width:440px;">Tell us what's going on with your vehicle's electronics. We'll get back to you with an estimated cost and turnaround — usually within a few hours.</p>
+        <div class="quote-perks">
+          <div class="perk"><div class="dot">✓</div><div><b>No fix, no fee</b><span>diagnosis is charged only if you don't proceed with repair.</span></div></div>
+          <div class="perk"><div class="dot">✓</div><div><b>Genuine turnaround estimates</b><span>we quote real bench time, not best-case guesses.</span></div></div>
+          <div class="perk"><div class="dot">✓</div><div><b>90-day warranty</b><span>on all completed ECU and key coding work.</span></div></div>
+        </div>
+      </div>
+
+      <form class="quote-form" id="quoteForm">
+        <div class="form-row">
+          <div class="field">
+            <label for="qName">Full name</label>
+            <input type="text" id="qName" name="name" placeholder="e.g. Rohan Fernandes" required>
+          </div>
+          <div class="field">
+            <label for="qPhone">Phone / WhatsApp</label>
+            <input type="tel" id="qPhone" name="phone" placeholder="+91 98765 43210" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="qVehicle">Vehicle make &amp; model</label>
+            <input type="text" id="qVehicle" name="vehicle" placeholder="e.g. Hyundai i20 2018" required>
+          </div>
+          <div class="field">
+            <label for="qService">Service required</label>
+            <select id="qService" name="service" required>
+              <option value="" disabled selected>Choose a service</option>
+              <option>ECU / ECM Repair</option>
+              <option>Key Coding / Immobilizer</option>
+              <option>OBD Diagnostics</option>
+              <option>Instrument Cluster Repair</option>
+              <option>Airbag / SRS Module Reset</option>
+              <option>ECU Cloning / Bench Testing</option>
+              <option>Not sure — need advice</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label for="qDetails">Describe the issue</label>
+          <textarea id="qDetails" name="details" placeholder="e.g. Car doesn't start, no spark, engine light flashing. Lost both keys."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">Send Quote Request</button>
+        <div class="form-note">On submit, this opens your email or WhatsApp with your details pre-filled so our team can reply directly to you.</div>
+        <div id="formStatus"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section id="payment">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Pay for your service</div>
+      <h2>Simple, secure payment options</h2>
+      <p>Pay once your quote is confirmed — in person at the workshop, or remotely via UPI / bank transfer.</p>
+    </div>
+    <div class="pay-grid">
+      <div class="pay-card">
+        <h3>Pay by UPI</h3>
+        <p class="sub">Scan the QR code or tap an app below. Please confirm the exact amount with our team before paying.</p>
+        <div class="qr-row">
+          <div class="qr-box">
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=260x260&data=upi%3A%2F%2Fpay%3Fpa%3Dleiteecmlabs%40okaxis%26pn%3DLeite%2520ECM%2520Labs%26cu%3DINR" alt="UPI QR code to pay Leite ECM Labs">
+          </div>
+          <div style="flex:1; min-width:200px;">
+            <div class="upi-id">
+              <span id="upiIdText">leiteecmlabs@okaxis</span>
+              <button class="copy-btn" id="copyUpiBtn">COPY</button>
+            </div>
+            <div class="pay-apps">
+              <a href="upi://pay?pa=leiteecmlabs@okaxis&pn=Leite%20ECM%20Labs&cu=INR">Google Pay / PhonePe / Paytm</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pay-card">
+        <h3>Other ways to pay</h3>
+        <p class="sub">Whichever's easiest for you — all options settle directly with the workshop.</p>
+        <ul class="method-list">
+          <li><span class="k">Cash</span> <b>At the workshop counter</b></li>
+          <li><span class="k">Card</span> <b>Debit / Credit, in person</b></li>
+          <li><span class="k">Bank Transfer</span> <b>NEFT / IMPS on request</b></li>
+          <li><span class="k">UPI</span> <b>GPay · PhonePe · Paytm</b></li>
+        </ul>
+        <a href="#quote" class="btn btn-amber" style="margin-top:10px;">Get a Quote First →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="location">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Find us</div>
+      <h2>Visit the workshop</h2>
+      <p>Located in Pilar, right opposite the Bank of Baroda branch — easy to spot, easy to park.</p>
+    </div>
+    <div class="loc-grid">
+      <div class="loc-card">
+        <h3>Leite ECM Labs</h3>
+        <div class="addr">
+          <b>Address</b>
+          Opposite Bank of Baroda,<br>
+          Pilar, Tiswadi,<br>
+          Goa – 403203, India
+        </div>
+        <ul class="hours-list">
+          <li><span>Mon – Sat</span> <b>9:30 AM – 7:00 PM</b></li>
+          <li><span>Sunday</span> <b>Closed</b></li>
+        </ul>
+        <div style="display:flex; gap:12px; flex-wrap:wrap;">
+          <a class="btn btn-primary" href="https://www.google.com/maps/dir/?api=1&destination=Bank+of+Baroda,Pilar,Goa+403203" target="_blank" rel="noopener">Get Directions</a>
+          <a class="btn btn-ghost" href="tel:+910000000000">Call Workshop</a>
+        </div>
+      </div>
+      <div class="map-embed">
+        <iframe
+          src="https://www.google.com/maps?q=Bank+of+Baroda,+Pilar,+Goa+403203&output=embed"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          title="Leite ECM Labs location map, opposite Bank of Baroda, Pilar, Goa">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <div class="logo"><span class="logo-mark" aria-hidden="true"></span><span>Leite ECM Labs</span></div>
+        <p>ECU repair, key coding, and auto-electronics diagnostics — opposite Bank of Baroda, Pilar, Goa.</p>
+      </div>
+      <div class="foot-cols">
+        <div class="foot-col">
+          <b>Services</b>
+          <a href="#services">ECU Repair</a>
+          <a href="#services">Key Coding</a>
+          <a href="#services">Diagnostics</a>
+          <a href="#services">Cluster Repair</a>
+        </div>
+        <div class="foot-col">
+          <b>Company</b>
+          <a href="#quote">Get a Quote</a>
+          <a href="#payment">Payment</a>
+          <a href="#location">Location</a>
+        </div>
+        <div class="foot-col">
+          <b>Contact</b>
+          <a href="tel:+910000000000">+91 00000 00000</a>
+          <a href="mailto:hello@leiteecmlabs.in">hello@leiteecmlabs.in</a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="year"></span> Leite ECM Labs. All rights reserved.</span>
+      <span>Opposite Bank of Baroda, Pilar, Goa 403203</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Mobile menu toggle
+  const burger = document.getElementById('burgerBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  burger.addEventListener('click', () => {
+    mobileMenu.style.display = mobileMenu.style.display === 'none' ? 'block' : 'none';
+  });
+  mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mobileMenu.style.display = 'none'));
+
+  // Reveal on scroll
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); });
+  }, { threshold: 0.15 });
+  revealEls.forEach(el => io.observe(el));
+
+  // Waveform gentle animation
+  const wave1 = document.getElementById('wave1');
+  const wave2 = document.getElementById('wave2');
+  let t = 0;
+  function animateWave(){
+    t += 0.04;
+    const shift = Math.sin(t) * 3;
+    if (wave1) wave1.setAttribute('transform', `translate(0, ${shift})`);
+    if (wave2) wave2.setAttribute('transform', `translate(0, ${-shift * 0.6})`);
+    requestAnimationFrame(animateWave);
+  }
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    requestAnimationFrame(animateWave);
+  }
+
+  // Copy UPI ID
+  const copyBtn = document.getElementById('copyUpiBtn');
+  copyBtn.addEventListener('click', () => {
+    const id = document.getElementById('upiIdText').textContent.trim();
+    navigator.clipboard.writeText(id).then(() => {
+      copyBtn.textContent = 'COPIED';
+      setTimeout(() => copyBtn.textContent = 'COPY', 1500);
+    }).catch(() => {
+      copyBtn.textContent = 'COPY FAILED';
+      setTimeout(() => copyBtn.textContent = 'COPY', 1500);
+    });
+  });
+
+  // Quote form -> opens email client with prefilled details
+  const quoteForm = document.getElementById('quoteForm');
+  const formStatus = document.getElementById('formStatus');
+  quoteForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const name = document.getElementById('qName').value.trim();
+    const phone = document.getElementById('qPhone').value.trim();
+    const vehicle = document.getElementById('qVehicle').value.trim();
+    const service = document.getElementById('qService').value;
+    const details = document.getElementById('qDetails').value.trim();
+
+    const subject = encodeURIComponent(`Quote Request — ${service} (${vehicle})`);
+    const body = encodeURIComponent(
+`New quote request from the website:
+
+Name: ${name}
+Phone/WhatsApp: ${phone}
+Vehicle: ${vehicle}
+Service Required: ${service}
+Issue Description: ${details || 'N/A'}
+`);
+    window.location.href = `mailto:hello@leiteecmlabs.in?subject=${subject}&body=${body}`;
+
+    formStatus.textContent = 'Opening your email app with the request filled in — just hit send!';
+    formStatus.classList.add('ok');
+  });
+</script>
+
+</body>
+</html>
